@@ -4,7 +4,7 @@ const bodyparser = require('body-parser');
 const cors = require('cors');
 const keys = require('./config/keys')
 
-mongoose.connect('mongodb+srv://mukarram:1234@cluster0.lkeku.mongodb.net/mern-crud?retryWrites=true&w=majority');
+mongoose.connect(keys.mongo_uri);
 
 const app = express();
 
